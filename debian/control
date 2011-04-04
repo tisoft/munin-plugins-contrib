@@ -12,5 +12,6 @@ Package: munin-plugins-contrib
 Architecture: all
 Depends: munin-node, ${shlibs:Depends}, ${misc:Depends}
 Recommends: perl, python, update-notifier-common
+Suggests: dspam
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>

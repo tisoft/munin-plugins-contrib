@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # -*- sh -*-
 
 : << =cut
@@ -234,12 +234,17 @@ update_statefile() {
 
 	debug starting $dspam_stats -t -S
 	local t_start=$(date +%s)
-	$dspam_stats -t -S | while read a b c d e f g h i j k l x; do
+	$dspam_stats -t -S | while read a b c d e f g h i j k l m x; do
 
 		# example of output format (3.9.1 rc1) for each user:
 		#username@example.org
 		#    TP:     0 TN:  2147 FP:     0 FN:    53 SC:     0 NC:     0
 		#    SHR:    0.00%       HSR:    0.00%       OCA:   97.59%
+
+
+		# example of output format (3.9.1) for each user:
+		#username@example.org	TP:     0 TN:  2147 FP:     0 FN:    53 SC:     0 NC:     0
+		#						SHR:    0.00%       HSR:    0.00%       OCA:   97.59%
 
 		case $a in
 			TP:)
@@ -262,6 +267,7 @@ update_statefile() {
 			*)
 				# the 1st line
 				local uid=$a
+				local tp=$c tn=$e fp=$g fn=$i sc=$k nc=$m
 				;;
 		esac
 	done
