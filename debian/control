@@ -11,6 +11,6 @@ Homepage: <insert the upstream URL, if relevant>
 Package: munin-plugins-contrib
 Architecture: all
 Depends: munin-node, ${shlibs:Depends}, ${misc:Depends}
-Recommends: python, update-notifier-common
+Recommends: perl, python, update-notifier-common
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>

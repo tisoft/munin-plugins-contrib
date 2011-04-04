@@ -7,7 +7,7 @@
 # Results are % of healthy drives in a raid device
 # and % rebuilt of devices that are resyncing. 
 #
-#%# family=contrib
+#%# family=auto
 #%# capabilities=autoconf
 
 if ($ARGV[0] and $ARGV[0] eq "autoconf")
