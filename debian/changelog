@@ -1,5 +1,9 @@
-munin-plugins-contrib (0.1) unstable; urgency=low
+munin-plugins-contrib (0.1) maverick; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
+  * Contains the following plugins:
+  ** apt_ubuntu
+  ** raid
+  ** dspam_
 
  -- Markus Heberling <markus@tisoft.de>  Mon, 04 Apr 2011 09:17:32 +0200

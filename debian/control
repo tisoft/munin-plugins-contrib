@@ -1,10 +1,9 @@
 Source: munin-plugins-contrib
-Section: unknown
+Section: net
 Priority: extra
 Maintainer: Markus Heberling <markus@tisoft.de>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.1
-Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: git://git.debian.org/collab-maint/munin-plugins-contrib.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/munin-plugins-contrib.git;a=summary
 
@@ -13,5 +12,8 @@ Architecture: all
 Depends: munin-node, ${shlibs:Depends}, ${misc:Depends}
 Recommends: perl, python, update-notifier-common
 Suggests: dspam
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Several plugins from the munin plugin exchange
+ Currently contains the follwing plugibs:
+  * apt_ubuntu
+  * raid
+  * dspam_
