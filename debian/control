@@ -11,9 +11,10 @@ Package: munin-plugins-contrib
 Architecture: all
 Depends: munin-node, ${shlibs:Depends}, ${misc:Depends}
 Recommends: perl, python, update-notifier-common
-Suggests: dspam
+Enhances: dspam
 Description: Several plugins from the munin plugin exchange
  Currently contains the follwing plugibs:
   * apt_ubuntu
   * raid
   * dspam_
+  * ksm_
