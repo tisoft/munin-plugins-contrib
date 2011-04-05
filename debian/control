@@ -4,8 +4,8 @@ Priority: extra
 Maintainer: Markus Heberling <markus@tisoft.de>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.1
-#Vcs-Git: git://git.debian.org/collab-maint/munin-plugins-contrib.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/munin-plugins-contrib.git;a=summary
+Vcs-Git: git://github.com/tisoft/munin-plugins-contrib.git
+Vcs-Browser: https://github.com/tisoft/munin-plugins-contrib
 
 Package: munin-plugins-contrib
 Architecture: all
