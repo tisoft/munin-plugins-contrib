@@ -1,3 +1,10 @@
+munin-plugins-contrib (0.3) maverick; urgency=low
+
+  * added vcs entries
+  * ksm_ draw absolute graph as areastack
+
+ -- Markus Heberling <markus@tisoft.de>  Thu, 07 Apr 2011 13:04:00 +0200
+
 munin-plugins-contrib (0.2) maverick; urgency=low
 
   * added ksm_ plugin
