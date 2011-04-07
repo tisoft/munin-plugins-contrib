@@ -38,7 +38,7 @@ def autoconf():
                print 'yes'
                sys.exit(0)
     print 'no (/sys/kernel/mm/ksm/run must be present and value must be 1)'
-    sys.exit(1)
+    sys.exit(0)
 
 def suggest():
     print 'pages_absolute'
@@ -51,6 +51,7 @@ def config():
     if('ksm_pages_absolute' in sys.argv[0]): 
         print 'graph_category %s' % (category)
         print 'graph_title %s Pages Absolute' % (title)
+        print 'graph_order pages_unshared pages_volatile pages_shared pages_sharing'
         print 'pages_shared.info how many shared pages are being used'
         print 'pages_sharing.info how many more sites are sharing them i.e. how much saved'
         print 'pages_unshared.info how many pages unique but repeatedly checked for merging'
@@ -59,7 +60,11 @@ def config():
         print 'pages_sharing.label pages_sharing'
         print 'pages_unshared.label pages_unshared'
         print 'pages_volatile.label pages_volatile'
-    elif('ksm_pages_relative' in sys.argv[0]):
+        print 'pages_shared.draw AREASTACK'
+        print 'pages_sharing.draw AREASTACK'
+        print 'pages_unshared.draw AREASTACK'
+        print 'pages_volatile.draw AREASTACK'
+   elif('ksm_pages_relative' in sys.argv[0]):
         print 'graph_category %s' % (category)
         print 'graph_title %s Pages Relative' % (title)
         print 'pages_sharing_shared.info ratio of sharing to shared pages'
