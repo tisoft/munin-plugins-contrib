@@ -1,3 +1,9 @@
+munin-plugins-contrib (0.3.1) maverick; urgency=low
+
+  * fixed ksm_ line intendation
+
+ -- Markus Heberling <markus@tisoft.de>  Mon, 11 Apr 2011 10:01:21 +0200
+
 munin-plugins-contrib (0.3) maverick; urgency=low
 
   * added vcs entries
